@@ -1,0 +1,16 @@
+# Write Append Data to a file
+f1 = open("Output.txt",'w')
+enter1 = str(input("Enter txt to save in a file:"))
+writing_f1 = f1.write(enter1+'\n')
+print("Data written successfully into the Output.txt file")
+f1.close()
+f1 = open("Output.txt",'a')
+enter2 = str(input("Enter additional txt to append:"))
+append_f1 = f1.write(enter2)
+print("Data successfully added to 'Output.txt' file")
+f1.close()
+f1 = open("Output.txt",'r')
+Reading_f1 = f1.read()
+print("Final content of Output.txt file:\n",Reading_f1)
+f1.close()
+
